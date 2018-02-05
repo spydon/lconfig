@@ -2,8 +2,10 @@
 
 # This script symlinks the config directories in lconfig to their correct place
 # Author: Lukas Klingsbo (Spydon)
-# Useful packages:
-# xmonad xmobar mmenu urxvt zsh oh-my-zsh nvim firefox pacmanfm scrot xbacklight
+
+# Useful packages for fresh installs:
+# xmonad xmobar mmenu urxvt zsh oh-my-zsh nvim firefox pacmanfm scrot
+# fehx backlight sublime3 powerline-fonts
 
 #
 # Create symlinks to config files
