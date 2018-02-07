@@ -26,7 +26,7 @@ ZSH_THEME="sorin"
 # ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -47,28 +47,11 @@ ZSH_THEME="sorin"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git vi-mode rebar3 aws)
 
-# User configuration
+### User configuration
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/spydon/.cabal/bin:/home/spydon/bin:/home/spydon/scripts"
-# export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
-
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
@@ -77,21 +60,15 @@ if [[ "$SSH_AGENT_PID" == "" ]]; then
     eval "$(<~/.ssh-agent-thing)"
 fi
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+### ALIASES
+
 # Pipe Highlight to less
 export LESSOPEN="| $(which highlight) %s --out-format xterm256 --line-numbers --quiet --force"
 export LESS=" -R"
 alias less='less -m -N -g -i -J --line-numbers --underline-special'
 alias more='less'
 
-# Last arg of last command
+# Last arg of last command, alt+.
 bindkey '\e.' insert-last-word
 
 # Use "ccat" to cat files with highlight
@@ -108,6 +85,7 @@ alias awsnw='eval `aws-adfs-tool login -u lukas.klingsbo -r pgw -a klarna-non-pr
 alias rmlogs='sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log'
 alias vim=nvim
 alias poweroff='sudo poweroff'
+alias ssh='TERM=linux ssh'
 #alias less='nvim -R'
 alias irc='ssh -t lukas.fyi "screen -r"'
 alias tok="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwstage-admin"$1
