@@ -5,7 +5,7 @@
 
 # Useful packages for fresh installs:
 # xmonad xmobar mmenu urxvt zsh oh-my-zsh nvim firefox pacmanfm scrot
-# fehx backlight sublime3 powerline-fonts
+# feh backlight sublime3 powerline-fonts intellij tridactyl
 
 #
 # Create symlinks to config files
