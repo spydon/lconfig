@@ -24,6 +24,7 @@ main = do
     { terminal = "urxvt"
     , manageHook = manageDocks <+> manageHook defaultConfig
     , layoutHook = smartBorders . avoidStruts $ layoutHook defaultConfig
+    , focusedBorderColor = "#00afb5"
     , normalBorderColor = "#b58900"
     , startupHook = setWMName "LG3D"
     , modMask = mod4Mask
