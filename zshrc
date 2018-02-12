@@ -85,7 +85,7 @@ alias awsnw='eval `aws-adfs-tool login -u lukas.klingsbo -r pgw -a klarna-non-pr
 alias rmlogs='sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log'
 alias vim=nvim
 alias poweroff='sudo poweroff'
-alias ssh='TERM=linux ssh'
+alias ssh='TERM=linux ssh -oStrictHostKeyChecking=no'
 #alias less='nvim -R'
 alias irc='ssh -t lukas.fyi "screen -r"'
 alias tok="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwstage-admin"$1
