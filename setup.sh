@@ -4,8 +4,8 @@
 # Author: Lukas Klingsbo (Spydon)
 
 # Useful packages for fresh installs:
-# xmonad xmobar mmenu urxvt zsh oh-my-zsh nvim firefox pacmanfm scrot
-# feh backlight sublime3 powerline-fonts intellij tridactyl
+# xmonad xmobar mmenu urxvt, terminator, termite zsh oh-my-zsh nvim firefox
+# pacmanfm scrot feh backlight sublime3 powerline-fonts intellij tridactyl
 
 #
 # Create symlinks to config files
