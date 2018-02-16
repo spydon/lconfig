@@ -21,7 +21,7 @@ main = do
   spawn background
 
   xmonad $ defaultConfig
-    { terminal = "urxvt"
+    { terminal = "termite"
     , manageHook = manageDocks <+> manageHook defaultConfig
     , layoutHook = smartBorders . avoidStruts $ layoutHook defaultConfig
     , focusedBorderColor = "#b8387f"
