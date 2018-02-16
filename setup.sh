@@ -4,15 +4,17 @@
 # Author: Lukas Klingsbo (Spydon)
 
 # Useful packages for fresh installs:
-# xmonad xmobar mmenu urxvt, terminator, termite zsh oh-my-zsh nvim firefox
+# xmonad xmobar mmenu urxvt terminator termite zsh oh-my-zsh nvim firefox
 # pacmanfm scrot feh backlight sublime3 powerline-fonts intellij tridactyl
+# compton
 
 #
 # Create symlinks to config files
 #
 
 cd "$(dirname "$0")"
-ln -s nvim ~/.config/nvim
+ln -s `realpath nvim` ~/.config/nvim
+ln -s `realpath termite` ~/.config/termite
 ln -s `realpath xinitrc` ~/.xinitrc
 ln -s `realpath zshrc` ~/.zshrc
 ln -s `realpath Xresources` ~/.Xresources

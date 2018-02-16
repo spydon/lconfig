@@ -88,4 +88,5 @@ syntax on
 set synmaxcol=800  " Highlight lines of at most 800 characters length
 set background=dark
 colorscheme PaperColor
-hi Normal guibg=NONE ctermbg=NONE
+" Transparency
+"hi Normal guibg=NONE ctermbg=NONE
