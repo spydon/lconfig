@@ -80,6 +80,7 @@ match ExtraWhitespace /\s\+$/
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'powerline/powerline'
 
 call plug#end()
 
