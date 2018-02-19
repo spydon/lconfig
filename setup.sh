@@ -1,17 +1,9 @@
 #!/usr/bin/env bash
 
-# This script symlinks the config directories in lconfig to their correct place
-# Author: Lukas Klingsbo (Spydon)
-
 cd "$(dirname "$0")"
 
-# Useful packages for fresh installs:
-# xmonad xmobar mmenu urxvt terminator termite zsh antigen nvim firefox
-# pacmanfm scrot feh backlight sublime3 powerline-fonts intellij tridactyl
-# compton
-
 #
-# Install things
+# Install zsh plugin manager
 #
 
 mkdir remote 2> /dev/null
