@@ -13,6 +13,12 @@ antigen bundle command-not-found
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
 
+# Fish-like fast/unobtrusive autosuggestions for zsh.
+antigen bundle zsh-users/zsh-autosuggestions
+
+# Fish shell history up and down
+antigen bundle zsh-users/zsh-history-substring-search
+
 # Load the theme.
 antigen theme sorin
 
