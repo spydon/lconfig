@@ -25,13 +25,14 @@ Config {
         Run Com "/home/spydon/scripts/altcoin.sh" ["BTC"] "bitcoin" 600,
         Run Com "/home/spydon/scripts/altcoin.sh" ["XMR"] "monero" 600,
         Run Com "/home/spydon/scripts/altcoin.sh" ["ZEC"] "zcash" 600,
+        Run Com "/home/spydon/scripts/altcoin.sh" ["XRP"] "ripple" 600,
         Run MPD ["-t",
                   "<artist>: <title> (<album>) <state>", -- <remaining>
                             "--", "-P", ">>", "-Z", "|", "-S", "><"] 30,
         Run StdinReader],
     sepChar = "%",
     alignSep = "}{",
-    template = "%StdinReader%  }{ %bitcoin% | %monero% | %zcash% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date%</fc>"
+    template = "%StdinReader%  }{ %bitcoin% | %monero% | %zcash% | %ripple% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date%</fc>"
     --template = "%StdinReader%  Playing: %mpd% }{ %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date%</fc>"
 }
 
