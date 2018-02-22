@@ -26,6 +26,7 @@ main = do
     , layoutHook = smartBorders . avoidStruts $ layoutHook defaultConfig
     , focusedBorderColor = "#37b5a6"
     , normalBorderColor = "#444"
+    , borderWidth = 2
     , startupHook = setWMName "LG3D"
     , modMask = mod4Mask
     , handleEventHook    = handleEventHook defaultConfig <+> docksEventHook
