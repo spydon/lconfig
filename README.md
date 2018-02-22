@@ -19,6 +19,7 @@ Author: Lukas Klingsbo (Spydon)
 * meld - Show git diffs
 * nvim - Well, vim.
 * autojump - Use j to intelligently cd around
+* htop, gtop - Monitor processes
 
 ### Potentials:
 * sublime3 - Lightweight grafical editor, vim mode does not work flawlessly
