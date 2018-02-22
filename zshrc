@@ -65,3 +65,4 @@ alias irc='ssh -t lukas.fyi "screen -r"'
 alias tok="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwstage-admin"$1
 alias tun="sudo openconnect https://secvpn.basefarm.com -ullingsbo -p582527"$1
 export EDITOR="nvim"
+source /usr/share/autojump/autojump.zsh

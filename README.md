@@ -18,6 +18,7 @@ Author: Lukas Klingsbo (Spydon)
 * gitg - Visualize git branches
 * meld - Show git diffs
 * nvim - Well, vim.
+* autojump - Use j to intelligently cd around
 
 ### Potentials:
 * sublime3 - Lightweight grafical editor, vim mode does not work flawlessly
