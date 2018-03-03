@@ -49,7 +49,7 @@ foreground = #ffffff
 #background = #3f3f3f
 
 # 100% background transparency (requires a compositor)
-background = rgba(0, 0, 0, 0)
+background = rgba(0, 0, 0, 0.5)
 
 # If unset, will reverse foreground and background
 highlight = #2f2f2f
@@ -58,7 +58,7 @@ highlight = #2f2f2f
 #color1 = #705050
 #color2 = #60b48a
 #color3 = #dfaf8f
-#color4 = #506070
+color4 = #709070
 #color5 = #dc8cc3
 #color6 = #8cd0d3
 #color7 = #dcdccc

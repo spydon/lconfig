@@ -5,10 +5,11 @@ source ~/.config/lconfig/remote/antigen.zsh
 antigen use oh-my-zsh
 
 # Bundles from the default repo (robbyrussell's oh-my-zsh).
-antigen bundle git
-antigen bundle vi-mode
+antigen bundle autojump
 antigen bundle aws
 antigen bundle command-not-found
+antigen bundle git
+antigen bundle vi-mode
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -57,12 +58,11 @@ alias awsn='eval `aws-adfs-tool login -u lukas.klingsbo -r read-only -a klarna-n
 alias awsp='eval `aws-adfs-tool login -u lukas.klingsbo -r read-only -a klarna-production --with-wrapper-for` aws && `aws ecr get-login --no-include-email --profile read-only@klarna-production --region eu-west-1`'
 alias awsnw='eval `aws-adfs-tool login -u lukas.klingsbo -r pgw -a klarna-non-production --with-wrapper-for aws` && `aws ecr get-login --no-include-email --profile pgw@klarna-non-production --region eu-west-1`'
 alias rmlogs='sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log'
-alias vim=nvim
 alias poweroff='sudo poweroff'
 alias ssh='TERM=linux ssh -oStrictHostKeyChecking=no'
 #alias less='nvim -R'
 alias irc='ssh -t lukas.fyi "screen -r"'
 alias tok="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwstage-admin"$1
+alias tok-prod="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwprod-readonly $1"
 alias tun="sudo openconnect https://secvpn.basefarm.com -ullingsbo -p582527"$1
-export EDITOR="nvim"
-source /usr/share/autojump/autojump.zsh
+export EDITOR="vim"

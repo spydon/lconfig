@@ -17,7 +17,7 @@ Author: Lukas Klingsbo (Spydon)
 * compton - compositor, makes termite able to have transparency
 * gitg - Visualize git branches
 * meld - Show git diffs
-* nvim - Well, vim.
+* vim - Well, vim.
 * autojump - Use j to intelligently cd around
 * htop, gtop - Monitor processes
 
