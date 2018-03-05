@@ -25,7 +25,7 @@ ln -nsf `realpath zshrc` ~/.zshrc
 #
 
 # Clone the scripts repo laters
-mkdir ~/script 2> /dev/null
+mkdir ~/scripts 2> /dev/null
 mkdir ~/bin 2> /dev/null
 mkdir ~/docs 2> /dev/null
 mkdir ~/repos 2> /dev/null
