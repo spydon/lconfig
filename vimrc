@@ -5,11 +5,11 @@ set encoding=utf-8
 
 " File handling
 set backup
-set backupdir=~/.local/share/nvim/backup
-set backupskip=~/.local/share/nvim/backup/*
+set backupdir=~/.local/share/vim/backup
+set backupskip=~/.local/share/vim/backup/*
 
 set swapfile
-set dir=~/.local/share/nvim/swap
+set dir=~/.local/share/vim/swap
 
 " Sane searching
 set hlsearch   " Highlight search
@@ -61,6 +61,9 @@ set mousehide  " Hide mouse once the typing begins
 set splitbelow  " Split below when splitting vertically
 set splitright  " Split to the right when splitting horisontally
 
+" Use jj instead of escape
+imap jj <Esc>
+
 " Disable Arrow keys in Escape mode
 map <up> <nop>
 map <down> <nop>
@@ -77,10 +80,9 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 " Specify a directory for plugins
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.local/share/vim/plugged')
 
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'powerline/powerline'
 Plug 'bling/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'
