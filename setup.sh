@@ -13,12 +13,12 @@ curl -sSL git.io/antigen > remote/antigen.zsh
 # Create symlinks to config files
 #
 
-ln -nsf `realpath nvim` ~/.config/nvim
 ln -nsf `realpath termite` ~/.config/termite
+ln -nsf `realpath vimrc` ~/.vimrc
 ln -nsf `realpath xinitrc` ~/.xinitrc
-ln -nsf `realpath zshrc` ~/.zshrc
-ln -nsf `realpath Xresources` ~/.Xresources
 ln -nsf `realpath xmonad` ~/.xmonad
+ln -nsf `realpath Xresources` ~/.Xresources
+ln -nsf `realpath zshrc` ~/.zshrc
 
 #
 # Create common directories
