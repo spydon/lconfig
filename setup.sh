@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 cd "$(dirname "$0")"
 
 #
@@ -13,6 +12,7 @@ curl -sSL git.io/antigen > remote/antigen.zsh
 # Create symlinks to config files
 #
 
+ln -nsf `realpath ideavimrc` ~/.ideavimrc
 ln -nsf `realpath termite` ~/.config/termite
 ln -nsf `realpath vimrc` ~/.vimrc
 ln -nsf `realpath xinitrc` ~/.xinitrc

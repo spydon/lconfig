@@ -27,6 +27,7 @@ antigen theme sorin
 antigen apply
 
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/spydon/.cabal/bin:/home/spydon/bin:/home/spydon/scripts"
+export TERM=xterm-256color
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
@@ -49,6 +50,7 @@ bindkey '\e.' insert-last-word
 # Use "ccat" to cat files with highlight
 alias c="ccat"
 
+alias ssh='TERM=linux ssh -oStrictHostKeyChecking=no'
 alias yg=yaourt
 alias f='find . -name $1 2> /dev/null'
 alias fa='find / -name $1 2> /dev/null'
@@ -59,7 +61,6 @@ alias awsp='eval `aws-adfs-tool login -u lukas.klingsbo -r read-only -a klarna-p
 alias awsnw='eval `aws-adfs-tool login -u lukas.klingsbo -r pgw -a klarna-non-production --with-wrapper-for aws` && `aws ecr get-login --no-include-email --profile pgw@klarna-non-production --region eu-west-1`'
 alias rmlogs='sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log'
 alias poweroff='sudo poweroff'
-alias ssh='TERM=linux ssh -oStrictHostKeyChecking=no'
 #alias less='nvim -R'
 alias irc='ssh -t lukas.fyi "screen -r"'
 alias tok="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwstage-admin"$1
