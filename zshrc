@@ -67,3 +67,5 @@ alias tok="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aw
 alias tok-prod="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwprod-readonly $1"
 alias tun="sudo openconnect https://secvpn.basefarm.com -ullingsbo -p582527"$1
 export EDITOR="vim"
+
+source .zshrc-local 2> /dev/null
