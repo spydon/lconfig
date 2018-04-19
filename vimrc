@@ -61,6 +61,16 @@ set mousehide  " Hide mouse once the typing begins
 set splitbelow  " Split below when splitting vertically
 set splitright  " Split to the right when splitting horisontally
 
+" Settings for directory browser
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_browse_split = 3
+let g:netrw_winsize = 25
+augroup ProjectDrawer
+  autocmd!
+  autocmd VimEnter * :Vexplore
+augroup END
+
 " Use jj instead of escape
 imap jj <Esc>
 
