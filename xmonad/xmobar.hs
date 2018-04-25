@@ -11,7 +11,7 @@ Config {
                              , "--high"     , "darkred"
                              ] 100,
         Run Memory ["-t","Mem: <usedratio>%"] 100,
-        Run Date "%a %b %_d %H:%M" "date" 600,
+        Run Date "w.%V %a %b %_d %H:%M" "date" 600,
         Run DynNetwork [] 50,
         Run Battery [
           "-t", "<acstatus>: <left>% <timeleft>",

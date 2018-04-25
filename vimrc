@@ -2,7 +2,6 @@
 set nocompatible
 set encoding=utf-8
 
-
 " File handling
 set backup
 set backupdir=~/.local/share/vim/backup
@@ -71,8 +70,17 @@ augroup ProjectDrawer
   autocmd VimEnter * :Vexplore
 augroup END
 
+" Split navigation
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Use jj instead of escape
 imap jj <Esc>
+
+" Allow saving of files as sudo when it was forgotten
+cmap w!! w !sudo tee > /dev/null %
 
 " Disable Arrow keys in Escape mode
 map <up> <nop>
