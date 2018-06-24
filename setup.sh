@@ -21,6 +21,13 @@ ln -nsf `realpath Xresources` ~/.Xresources
 ln -nsf `realpath zshrc` ~/.zshrc
 
 #
+# Create vim directories
+#
+
+mkdir -p ~/.local/share/vim/swap
+mkdir -p ~/.local/share/vim/backup
+
+#
 # Create common directories
 #
 
