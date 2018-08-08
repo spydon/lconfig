@@ -56,5 +56,5 @@ main = do
             -- If the screens are in the wrong order
             [((m .|. mod4Mask, key), screenWorkspace sc >>= flip whenJust (windows . f))
                  -- was [0..] *** change to match your screen order
-                 | (key, sc) <- zip [xK_w, xK_e, xK_r] [2,0,1]
+                 | (key, sc) <- zip [xK_w, xK_e, xK_r] [2,1,0]
                  , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]])
