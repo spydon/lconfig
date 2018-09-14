@@ -20,16 +20,16 @@ main = do
   xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
   spawn background
 
-  xmonad $ defaultConfig
+  xmonad $ def
     { terminal = "termite"
-    , manageHook = manageDocks <+> manageSpawn <+> manageHook defaultConfig
-    , layoutHook = smartBorders . avoidStruts $ layoutHook defaultConfig
+    , manageHook = manageDocks <+> manageSpawn <+> manageHook def
+    , layoutHook = smartBorders . avoidStruts $ layoutHook def
     , focusedBorderColor = "#37b5a6"
     , normalBorderColor = "#444"
     , borderWidth = 2
     , startupHook = setWMName "LG3D"
     , modMask = mod4Mask
-    , handleEventHook = handleEventHook defaultConfig <+> docksEventHook
+    , handleEventHook = handleEventHook def <+> docksEventHook
     , logHook = dynamicLogWithPP xmobarPP
                               { ppOutput = hPutStrLn xmproc
                               , ppTitle = xmobarColor "green" "" . shorten 80
