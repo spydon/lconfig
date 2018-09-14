@@ -60,16 +60,6 @@ set mousehide  " Hide mouse once the typing begins
 set splitbelow  " Split below when splitting vertically
 set splitright  " Split to the right when splitting horisontally
 
-" Settings for directory browser
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_browse_split = 3
-let g:netrw_winsize = 25
-augroup ProjectDrawer
-  autocmd!
-  autocmd VimEnter * :Vexplore
-augroup END
-
 " Split navigation
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
@@ -83,10 +73,11 @@ imap jj <Esc>
 cmap w!! w !sudo tee > /dev/null %
 
 " Disable Arrow keys in Escape mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+" CtrlP wont work well with this
+"map <up> <nop>
+"map <down> <nop>
+"map <left> <nop>
+"map <right> <nop>
 
 " Disable Arrow keys in Insert mode
 imap <up> <nop>

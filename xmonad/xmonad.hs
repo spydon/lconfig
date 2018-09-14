@@ -22,7 +22,7 @@ main = do
 
   xmonad $ defaultConfig
     { terminal = "termite"
-    , manageHook = manageDocks <+> manageHook defaultConfig
+    , manageHook = manageDocks <+> manageSpawn <+> manageHook defaultConfig
     , layoutHook = smartBorders . avoidStruts $ layoutHook defaultConfig
     , focusedBorderColor = "#37b5a6"
     , normalBorderColor = "#444"
