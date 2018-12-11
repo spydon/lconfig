@@ -56,16 +56,9 @@ alias f='find . -name $1 2> /dev/null'
 alias fa='find / -name $1 2> /dev/null'
 alias s='grep -rn '$1' 2> /dev/null'
 alias bat='echo "Use acpi you lazy"'
-alias awsn='eval `aws-adfs-tool login -u lukas.klingsbo -r read-only -a klarna-non-production --with-wrapper-for aws` && `aws ecr get-login --no-include-email --profile read-only@klarna-non-production --region eu-west-1`'
-alias awsp='eval `aws-adfs-tool login -u lukas.klingsbo -r read-only -a klarna-production --with-wrapper-for` aws && `aws ecr get-login --no-include-email --profile read-only@klarna-production --region eu-west-1`'
-alias awsnw='eval `aws-adfs-tool login -u lukas.klingsbo -r pgw -a klarna-non-production --with-wrapper-for aws` && `aws ecr get-login --no-include-email --profile pgw@klarna-non-production --region eu-west-1`'
 alias rmlogs='sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log'
 alias poweroff='sudo poweroff'
-#alias less='nvim -R'
 alias irc='ssh -t lukas.fyi "screen -r"'
-alias tok="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwstage-admin $1"
-alias tok-prod="source /home/spydon/repos/pgw-pci-aws/bin/aws-assume-role-bf.sh && aws-assume-role basefarm kla-pgwprod-readonly $1"
-alias tun="sudo openconnect https://secvpn.basefarm.com -ullingsbo -p582527"$1
 export EDITOR="vim"
 export VISUAL="vim"
 
