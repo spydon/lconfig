@@ -4,11 +4,10 @@ Author: Lukas Klingsbo (Spydon)
 ## Useful packages for fresh installs:
 * xmonad, xmobar - Base xmonad setup
 * zsh, antigen - Base shell setup
-* mmenu - Like dmenu with math evaluation
+* rofi - A window switcher, application launcher and dmenu replacement 
 * termite - Terminal emulator with as minimized mouse usage for copy and links
-* terminator - Terminal emulator for sending same commands to several shells, tmux can also be used
 * firefox tridactyl - Firefox with vim bindings
-* pacmanfm - Lightweight file manager
+* pcmanfm - Lightweight file manager
 * scrot - Printscreen
 * feh - Background shower
 * backlight - Set backlight for laptops
@@ -20,6 +19,9 @@ Author: Lukas Klingsbo (Spydon)
 * vim - Well, vim.
 * autojump - Use j to intelligently cd around
 * htop, gtop - Monitor processes
+
+### Optionals:
+* terminator - Terminal emulator for sending same commands to several shells, tmux can also be used
 
 ### Potentials:
 * sublime3 - Lightweight grafical editor, vim mode does not work flawlessly
