@@ -36,7 +36,7 @@ main = do
                               }
     }
       `additionalKeys`
-           ([ ((mod4Mask, xK_p), spawn "mmenu")
+           ([ ((mod4Mask, xK_p), spawn "drofi")
             , ((mod4Mask, xK_b), spawn background)
             , ((mod4Mask, xK_c), spawn "urxvt -e tty-clock")
             , ((mod4Mask, xK_v), spawn "urxvt -e sudo wifi-menu")
