@@ -19,6 +19,7 @@ Author: Lukas Klingsbo (Spydon)
 * vim - Well, vim.
 * autojump - Use j to intelligently cd around
 * htop, gtop - Monitor processes
+* sxlock - X screen lock
 
 ### Optionals:
 * terminator - Terminal emulator for sending same commands to several shells, tmux can also be used

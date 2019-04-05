@@ -42,7 +42,7 @@ main = do
             , ((mod4Mask, xK_v), spawn "urxvt -e sudo wifi-menu")
             , ((mod4Mask, xK_n), spawn "pcmanfm")
             , ((mod4Mask, xK_f), spawn "firefox")
-            , ((mod4Mask, xK_z), spawn "sflock")
+            , ((mod4Mask, xK_z), spawn "sxlock -f fixed")
             , ((mod4Mask, xK_s), spawn "slack")
             , ((mod4Mask, xK_u), spawn "sh ~/bin/android-studio-preview/bin/studio.sh")
             , ((mod4Mask, xK_i), spawn "sh ~/bin/idea/bin/idea.sh")
