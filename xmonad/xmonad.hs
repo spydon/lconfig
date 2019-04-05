@@ -44,11 +44,9 @@ main = do
             , ((mod4Mask, xK_f), spawn "firefox")
             , ((mod4Mask, xK_z), spawn "sflock")
             , ((mod4Mask, xK_s), spawn "slack")
+            , ((mod4Mask, xK_u), spawn "sh ~/bin/android-studio-preview/bin/studio.sh")
             , ((mod4Mask, xK_i), spawn "sh ~/bin/idea/bin/idea.sh")
             , ((mod4Mask, xK_a), spawn "sh ~/scripts/screenshot.sh")
-            , ((mod4Mask, xK_F5), spawn "mpc previous")
-            , ((mod4Mask, xK_F6), spawn "mpc next")
-            , ((mod4Mask, xK_F7), spawn "mpc toggle")
             , ((mod4Mask, xK_x), sendMessage ToggleStruts)
             , ((mod4Mask, xK_Up), spawn "xbacklight +10")
             , ((mod4Mask, xK_Down), spawn "xbacklight -10") ]
