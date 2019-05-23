@@ -38,8 +38,8 @@ main = do
       `additionalKeys`
            ([ ((mod4Mask, xK_p), spawn "drofi")
             , ((mod4Mask, xK_b), spawn background)
-            , ((mod4Mask, xK_c), spawn "urxvt -e tty-clock")
-            , ((mod4Mask, xK_v), spawn "urxvt -e sudo wifi-menu")
+            , ((mod4Mask, xK_c), spawn "termite -e tty-clock")
+            , ((mod4Mask, xK_v), spawn "termite -e 'sudo wifi-menu'")
             , ((mod4Mask, xK_n), spawn "pcmanfm")
             , ((mod4Mask, xK_f), spawn "firefox")
             , ((mod4Mask, xK_z), spawn "sxlock -f fixed")

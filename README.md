@@ -4,7 +4,7 @@ Author: Lukas Klingsbo (Spydon)
 ## Useful packages for fresh installs:
 * xmonad, xmobar - Base xmonad setup
 * zsh, antigen - Base shell setup
-* rofi - A window switcher, application launcher and dmenu replacement 
+* drofi - A window switcher, application launcher and dmenu replacement 
 * termite - Terminal emulator with as minimized mouse usage for copy and links
 * firefox tridactyl - Firefox with vim bindings
 * pcmanfm - Lightweight file manager
