@@ -54,7 +54,7 @@ alias ssh='TERM=linux ssh -oStrictHostKeyChecking=no'
 alias yg=yaourt
 alias f='find . -name $1 2> /dev/null'
 alias fa='find / -name $1 2> /dev/null'
-alias s='grep -rn '$1' 2> /dev/null'
+alias s='grep -rnI '$1' 2> /dev/null'
 alias bat='echo "Use acpi you lazy"'
 alias rmlogs='sudo truncate -s 0 /var/lib/docker/containers/*/*-json.log'
 alias poweroff='sudo poweroff'
