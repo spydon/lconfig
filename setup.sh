@@ -20,6 +20,7 @@ ln -nsf `realpath xmonad` ~/.xmonad
 ln -nsf `realpath Xresources` ~/.Xresources
 ln -nsf `realpath zshrc` ~/.zshrc
 ln -nsf `realpath Xmodmap` ~/.Xmodmap
+ln -nsf `realpath user-dirs.dirs` ~/.config/user-dirs.dirs
 
 #
 # Create vim directories
