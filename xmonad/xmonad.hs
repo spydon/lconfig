@@ -21,7 +21,7 @@ main = do
   spawn background
 
   xmonad $ def
-    { terminal = "termite"
+    { terminal = "gnome-terminal"
     , manageHook = manageDocks <+> manageSpawn <+> manageHook def
     , layoutHook = smartBorders . avoidStruts $ layoutHook def
     , focusedBorderColor = "#37b5a6"
@@ -36,7 +36,7 @@ main = do
                               }
     }
       `additionalKeys`
-           ([ ((mod4Mask, xK_p), spawn "drofi")
+           ([ ((mod4Mask, xK_p), spawn "rofi -show run -theme solarized -font 'hack 10'")
             , ((mod4Mask, xK_b), spawn background)
             , ((mod4Mask, xK_c), spawn "termite -e tty-clock")
             , ((mod4Mask, xK_v), spawn "termite -e 'sudo wifi-menu'")

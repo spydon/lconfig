@@ -5,7 +5,7 @@ Author: Lukas Klingsbo (Spydon)
 * xmonad, xmobar - Base xmonad setup
 * zsh, antigen - Base shell setup
 * neovim - Vim but can be used as a backend for other applications, for example firenvim
-* drofi - A window switcher, application launcher and dmenu replacement
+* rofi - A window switcher, application launcher and dmenu replacement
 * termite - Terminal emulator with as minimized mouse usage for copy and links
 * firefox - Browser of course
 ** firenvim - Vim bindings for text boxes in firefox

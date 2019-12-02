@@ -26,7 +26,7 @@ antigen theme sorin
 # Tell Antigen that you're done.
 antigen apply
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/spydon/.cabal/bin:/home/spydon/bin:/home/spydon/scripts:/home/spydon/bin/flutter/bin"
+export PATH=$PATH":~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/spydon/.cabal/bin:/home/spydon/bin:/home/spydon/scripts:/home/spydon/bin/flutter/bin"
 export TERM=xterm-256color
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
@@ -43,6 +43,7 @@ export LESSOPEN="| $(which highlight) %s --out-format xterm256 --line-numbers --
 export LESS=" -R"
 alias less='less -m -N -g -i -J --line-numbers --underline-special'
 alias more='less'
+alias vim='nvim'
 
 # Last arg of last command, alt+.
 bindkey '\e.' insert-last-word
