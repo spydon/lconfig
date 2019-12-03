@@ -22,6 +22,7 @@ Author: Lukas Klingsbo (Spydon)
 * htop, gtop - Monitor processes
 * sxlock - X screen lock
 * powerline-fonts - Fonts with special glyphs to handle special shell themes
+* dunst - notifications that can be controlled by the keyboard
 
 ### Optionals:
 * terminator - Terminal emulator for sending same commands to several shells, tmux can also be used
