@@ -29,6 +29,6 @@ Config {
         Run StdinReader],
     sepChar = "%",
     alignSep = "}{",
-    template = "%StdinReader%  }{ %bitcoin% | %ethereum% | %monero% | %ripple% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date%</fc>"
+    template = "%StdinReader%  }{ %bitcoin% | %ethereum% | %monero% | %ripple% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date% </fc>"
 }
 
