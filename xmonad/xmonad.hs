@@ -13,8 +13,6 @@ import qualified XMonad.StackSet as W
 import System.IO
 
 background = "feh --bg-fill ~/Pictures/`ls ~/Pictures | shuf -n 1`"
---myWorkspaces =    ["1:Browser", "2:Slack", "3:LaTeX", "4:IntelliJ"] 
---               ++ ["5:Webstorm", "6:IRC", "7:Notes",  "8", "9",  "0"]
 
 main = do
   xmproc <- spawnPipe "xmobar ~/.xmonad/xmobar.hs"
@@ -23,9 +21,9 @@ main = do
   xmonad $ def
     { terminal = "gnome-terminal"
     , manageHook = manageDocks <+> manageSpawn <+> manageHook def
-    , layoutHook = smartBorders . avoidStruts $ layoutHook def
+    , layoutHook = smartSpacing 2 $ smartBorders . avoidStruts $ layoutHook def
     , focusedBorderColor = "#37b5a6"
-    , normalBorderColor = "#000"
+    , normalBorderColor = "#722f37"
     , borderWidth = 2
     , startupHook = setWMName "LG3D"
     , modMask = mod4Mask
@@ -54,5 +52,5 @@ main = do
             -- If the screens are in the wrong order
             [((m .|. mod4Mask, key), screenWorkspace sc >>= flip whenJust (windows . f))
                  -- was [0..] *** change to match your screen order
-                 | (key, sc) <- zip [xK_w, xK_e, xK_r] [2,1,0]
+                 | (key, sc) <- zip [xK_w, xK_e, xK_r] [0..]
                  , (f, m) <- [(W.view, 0), (W.shift, shiftMask)]])
