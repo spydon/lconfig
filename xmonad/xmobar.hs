@@ -26,9 +26,10 @@ Config {
         Run Com "/home/lukasklingsbo/scripts/altcoin.sh" ["ETH"] "ethereum" 600,
         Run Com "/home/lukasklingsbo/scripts/altcoin.sh" ["XMR"] "monero" 600,
         Run Com "/home/lukasklingsbo/scripts/altcoin.sh" ["XRP"] "ripple" 600,
+        Run Com "/home/lukasklingsbo/scripts/stock.py"   ["DIGN.ST"] "dignitana" 600,
         Run StdinReader],
     sepChar = "%",
     alignSep = "}{",
-    template = "%StdinReader%  }{ %bitcoin% | %ethereum% | %monero% | %ripple% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date% </fc>"
+    template = "%StdinReader%  }{ %dignitana% | %bitcoin% | %ethereum% | %monero% | %ripple% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date% </fc>"
 }
 
