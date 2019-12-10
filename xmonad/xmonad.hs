@@ -19,7 +19,7 @@ main = do
   spawn background
 
   xmonad $ def
-    { terminal = "gnome-terminal"
+    { terminal = "termite"
     , manageHook = manageDocks <+> manageSpawn <+> manageHook def
     , layoutHook = smartSpacing 2 $ smartBorders . avoidStruts $ layoutHook def
     , focusedBorderColor = "#37b5a6"
