@@ -26,7 +26,7 @@ antigen theme sorin
 # Tell Antigen that you're done.
 antigen apply
 
-export PATH=$PATH":~/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/home/spydon/.cabal/bin:/home/spydon/bin:/home/spydon/scripts:/home/spydon/bin/flutter/bin:~/bin/idea/bin"
+export PATH=$PATH":$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$HOME/.cabal/bin:$HOME/bin:$HOME/scripts:$HOME/bin/flutter/bin:$HOME/bin/idea/bin"
 export TERM=xterm-256color
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
