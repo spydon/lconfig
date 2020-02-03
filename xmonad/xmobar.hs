@@ -1,5 +1,6 @@
 Config {
     font = "xft:Monospace:pixelsize=12",
+    lowerOnStart = False,
     allDesktops = True,
     pickBroadest = True,   -- choose widest display (multi-monitor) 
     commands = [
