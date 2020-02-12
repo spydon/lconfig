@@ -9,25 +9,31 @@ mkdir remote 2> /dev/null
 curl -sSL git.io/antigen > remote/antigen.zsh
 
 #
+# Install vim-plug
+#
+
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+#
+# Create vim directories
+#
+
+mkdir -p ~/.config/nvim
+
+#
 # Create symlinks to config files
 #
 
 ln -nsf `realpath ideavimrc` ~/.ideavimrc
 ln -nsf `realpath termite` ~/.config/termite
-ln -nsf `realpath vimrc` ~/.vimrc
+ln -nsf `realpath vimrc` ~/.config/nvim/init.vim
 ln -nsf `realpath xinitrc` ~/.xinitrc
 ln -nsf `realpath xmonad` ~/.xmonad
 ln -nsf `realpath Xresources` ~/.Xresources
 ln -nsf `realpath zshrc` ~/.zshrc
 ln -nsf `realpath Xmodmap` ~/.Xmodmap
 ln -nsf `realpath user-dirs.dirs` ~/.config/user-dirs.dirs
-
-#
-# Create vim directories
-#
-
-mkdir -p ~/.local/share/vim/swap
-mkdir -p ~/.local/share/vim/backup
 
 #
 # Create common directories
