@@ -27,10 +27,11 @@ Config {
         Run Com "/bin/bash" ["-c", "~/scripts/altcoin.sh ETH"] "ethereum" 600,
         Run Com "/bin/bash" ["-c", "~/scripts/altcoin.sh XMR"] "monero" 600,
         Run Com "/bin/bash" ["-c", "~/scripts/altcoin.sh XRP"] "ripple" 600,
+        Run Com "/bin/bash" ["-c", "~/scripts/altcoin.sh EOS"] "eos" 600,
         Run Com "/bin/bash" ["-c", "python3 ~/scripts/stock.py DIGN.ST"] "dignitana" 600,
         Run StdinReader],
     sepChar = "%",
     alignSep = "}{",
-    template = "%StdinReader%  }{ %dignitana% | %bitcoin% | %ethereum% | %monero% | %ripple% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date% </fc>"
+    template = "%StdinReader%  }{ %dignitana% | %bitcoin% | %ethereum% | %eos% | %monero% | %ripple% | %multicpu% | %dynnetwork% | %memory% | %battery% | <fc=#ee9a00>%date% </fc>"
 }
 
