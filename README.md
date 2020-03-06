@@ -23,7 +23,8 @@ Author: Lukas Klingsbo (Spydon)
 * sxlock - X screen lock
 * powerline-fonts - Fonts with special glyphs to handle special shell themes
 * dunst - notifications that can be controlled by the keyboard
-* fzf - fuzzy search
+* fzf - fuzzy search in the filesystem
+* silversearcher-ag - powerful recursive grep (call with ag)
 
 ### Optionals:
 * terminator - Terminal emulator for sending same commands to several shells, tmux can also be used
