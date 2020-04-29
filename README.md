@@ -24,7 +24,7 @@ Author: Lukas Klingsbo (Spydon)
 * powerline-fonts - Fonts with special glyphs to handle special shell themes
 * dunst - notifications that can be controlled by the keyboard
 * fzf - fuzzy search in the filesystem
-* silversearcher-ag - powerful recursive grep (call with ag)
+* silversearcher-ag - powerful recursive grep (call with ag, replaces other grep like things)
 
 ### Optionals:
 * terminator - Terminal emulator for sending same commands to several shells, tmux can also be used
