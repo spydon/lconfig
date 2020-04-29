@@ -8,23 +8,23 @@ Author: Lukas Klingsbo (Spydon)
 * rofi - A window switcher, application launcher and dmenu replacement
 * termite - Terminal emulator with as minimized mouse usage for copy and links
 * firefox - Browser of course
-** firenvim - Vim bindings for text boxes in firefox
+** firenvim - Vim bindings for text boxes in firefox, depends on neovim
 ** tridactyl - Vim bindings for navigation in firefox
 * pcmanfm - Lightweight file manager
 * scrot - Printscreen
 * feh - Background shower
-* backlight - Set backlight for laptops
 * intellij - Great IDE
-* compton - compositor, makes termite able to have transparency
-* gitg - Visualize git branches
-* meld - Show git diffs
 * autojump - Use j to intelligently cd around
 * htop, gtop - Monitor processes
 * sxlock - X screen lock
-* powerline-fonts - Fonts with special glyphs to handle special shell themes
 * dunst - notifications that can be controlled by the keyboard
+* silversearcher-ag - powerful recursive grep (call with ag)
+* backlight - Set backlight for laptops
 * fzf - fuzzy search in the filesystem
-* silversearcher-ag - powerful recursive grep (call with ag, replaces other grep like things)
+* compton - compositor, makes termite able to have transparency
+* gitg - Visualize git branches
+* meld - Show git diffs
+* powerline-fonts - Fonts with special glyphs to handle special shell themes
 
 ### Optionals:
 * terminator - Terminal emulator for sending same commands to several shells, tmux can also be used
