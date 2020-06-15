@@ -79,12 +79,6 @@ cmap w!! w !sudo tee > /dev/null %
 "map <left> <nop>
 "map <right> <nop>
 
-" Disable Arrow keys in Insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
-
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
