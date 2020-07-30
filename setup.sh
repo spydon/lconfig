@@ -20,20 +20,22 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
 #
 
 mkdir -p ~/.config/nvim
+mkdir -p .local/share/vim/backup
 
 #
 # Create symlinks to config files
 #
 
 ln -nsf `realpath ideavimrc` ~/.ideavimrc
-ln -nsf `realpath termite` ~/.config/termite
+#ln -nsf `realpath termite` ~/.config/termite
 ln -nsf `realpath vimrc` ~/.config/nvim/init.vim
-ln -nsf `realpath xinitrc` ~/.xinitrc
-ln -nsf `realpath xmonad` ~/.xmonad
-ln -nsf `realpath Xresources` ~/.Xresources
+ln -nsf `realpath sway` ~/.config/sway
+#ln -nsf `realpath xinitrc` ~/.xinitrc
+#ln -nsf `realpath xmonad` ~/.xmonad
+#ln -nsf `realpath Xresources` ~/.Xresources
 ln -nsf `realpath zshrc` ~/.zshrc
-ln -nsf `realpath Xmodmap` ~/.Xmodmap
-ln -nsf `realpath user-dirs.dirs` ~/.config/user-dirs.dirs
+#ln -nsf `realpath Xmodmap` ~/.Xmodmap
+#ln -nsf `realpath user-dirs.dirs` ~/.config/user-dirs.dirs
 
 #
 # Create common directories

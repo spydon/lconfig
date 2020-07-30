@@ -65,4 +65,7 @@ alias drofi='rofi -show run -modi run -location 1 -width 100 -lines 2 -line-marg
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+export GDK_BACKEND=wayland
+export CLUTTER_BACKEND=wayland
+
 source .zshrc-local 2> /dev/null

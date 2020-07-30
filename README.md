@@ -1,7 +1,7 @@
 # This script symlinks the config directories in lconfig to their correct place
 Author: Lukas Klingsbo (Spydon)
 
-## Useful packages for fresh installs:
+## Useful packages for fresh installs on X11:
 * xmonad, xmobar - Base xmonad setup
 * zsh, antigen - Base shell setup
 * neovim - Vim but can be used as a backend for other applications, for example firenvim
@@ -35,3 +35,11 @@ Author: Lukas Klingsbo (Spydon)
 ### Deprecated:
 * urxvt - Replaced by termite which is more modern and has saner config
 * vim - Well, vim.
+
+## Useful packages for fresh installs on Wayland:
+* sway - Tiling window manager, drop-in replacement of i3
+* zsh, antiget - Base shell setup
+* neovim - Vim but can be used as a backend for other applications, for example firenvim
+* clipman - Clipboard manager
+* mpv - Video player
+* alacritty - Standard terminal in sway
