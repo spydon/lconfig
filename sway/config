@@ -23,6 +23,7 @@ for_window [app_id="alacritty"] opacity 0.8
 
 ### Output configuration
 #
+output DP-3 res 5120x1440
 set $wallpapers_path $HOME/pictures/wallpapers
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
@@ -65,6 +66,12 @@ input type:keyboard {
     xkb_layout "se"
     xkb_variant ",qwerty"
 }
+
+
+input "1133:50184:Logitech_USB_Trackball" {
+    scroll_method on_button_down
+}
+
 
 ### Key bindings
 #
