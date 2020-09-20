@@ -43,3 +43,4 @@ Author: Lukas Klingsbo (Spydon)
 * clipman - Clipboard manager
 * mpv - Video player
 * alacritty - Standard terminal in sway
+* grim - Screenshots
