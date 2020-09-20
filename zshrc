@@ -67,5 +67,10 @@ export VISUAL="nvim"
 
 export GDK_BACKEND=wayland
 export CLUTTER_BACKEND=wayland
+# Solves "Firefox is already running"
+export MOZ_DBUS_REMOTE=1
+# Fixes android studio menu problems
+export _JAVA_AWT_WM_NONREPARENTING=1
+export STUDIO_JDK=/usr/lib/jvm/java-11-openjdk
 
 source .zshrc-local 2> /dev/null
