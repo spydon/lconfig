@@ -71,6 +71,10 @@ input type:keyboard {
 input "1133:50184:Logitech_USB_Trackball" {
     scroll_method on_button_down
 }
+# Remove back button functionality
+bindsym --whole-window BTN_SIDE seat - cursor press button0
+bindsym --whole-window --release BTN_SIDE seat - cursor release button0
+
 
 
 ### Key bindings
