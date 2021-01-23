@@ -28,7 +28,7 @@ set $wallpapers_path $HOME/pictures/wallpapers
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 # Runs the notification daemon
-exec mako
+exec mako --default-timeout=10
 
 #
 # Example configuration:
@@ -99,6 +99,8 @@ bindsym --whole-window --release BTN_SIDE seat - cursor release button0
     bindsym $mod+p exec alacritty --class "launcher" -e bash -c 'compgen -c | grep -v fzf | sort -u | fzf --layout=reverse | xargs -r swaymsg -t command exec'
     for_window [app_id="^launcher$"] floating enable, border none, opacity 0.8
 
+    # Screenshot from part of the screen
+    bindsym $mod+a exec bash -c '/home/spydon/scripts/screenshot.sh'
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -197,7 +199,7 @@ bindsym --whole-window --release BTN_SIDE seat - cursor release button0
     bindsym $mod+space focus mode_toggle
 
     # Move focus to the parent container
-    bindsym $mod+a focus parent
+    bindsym $mod+Shift+a focus parent
 #
 # Scratchpad:
 #

@@ -44,3 +44,4 @@ Author: Lukas Klingsbo (Spydon)
 * mpv - Video player
 * alacritty - Standard terminal in sway
 * grim - Screenshots
+* wl-clipboard - Handles the clipboard from the command line
