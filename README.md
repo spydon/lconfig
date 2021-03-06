@@ -38,6 +38,7 @@ Author: Lukas Klingsbo (Spydon)
 
 ## Useful packages for fresh installs on Wayland:
 * sway - Tiling window manager, drop-in replacement of i3
+* waybar - Better bar than swaybar
 * zsh, antiget - Base shell setup
 * neovim - Vim but can be used as a backend for other applications, for example firenvim
 * clipman - Clipboard manager
