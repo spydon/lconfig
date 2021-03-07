@@ -86,7 +86,7 @@
 		"format": "Dign: {}"
   },
   "custom/flame": {
-		"interval": 60,
+		"interval": 1800,
 		"exec": "$HOME/scripts/so-flame.sh",
 		"format": "Flame: {}"
   },
