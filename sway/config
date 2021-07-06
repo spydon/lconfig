@@ -28,7 +28,7 @@ set $wallpapers_path $HOME/pictures/wallpapers
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
 # Runs the notification daemon
-exec mako --default-timeout=10
+exec mako --default-timeout 10000
 
 #
 # Example configuration:
@@ -75,13 +75,17 @@ input type:keyboard {
     xkb_variant ",qwerty"
 }
 
-
-input "1133:50184:Logitech_USB_Trackball" {
+# 273 - Right Click
+# 278 - Fn2
+# 279 - Fn3
+input type:pointer {
+    scroll_button 273
     scroll_method on_button_down
 }
+
 # Remove back button functionality
-bindsym --whole-window BTN_SIDE seat - cursor press button0
-bindsym --whole-window --release BTN_SIDE seat - cursor release button0
+#bindsym --whole-window BTN_SIDE seat - cursor press button0
+#bindsym --whole-window --release BTN_SIDE seat - cursor release button0
 
 
 
@@ -93,7 +97,7 @@ bindsym --whole-window --release BTN_SIDE seat - cursor release button0
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+Shift+c kill
 
     # Start your launcher
     bindsym $mod+p exec alacritty --class "launcher" -e bash -c 'compgen -c | grep -v fzf | sort -u | fzf --layout=reverse | xargs -r swaymsg -t command exec'
@@ -109,7 +113,7 @@ bindsym --whole-window --release BTN_SIDE seat - cursor release button0
 
 
     # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+q reload
 
     # Exit sway (logs you out of your Wayland session)
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
@@ -220,16 +224,16 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 20px
+    bindsym $down resize grow height 20px
+    bindsym $up resize shrink height 20px
+    bindsym $right resize grow width 20px
 
     # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
+    bindsym Left resize shrink width 20px
+    bindsym Down resize grow height 20px
+    bindsym Up resize shrink height 20px
+    bindsym Right resize grow width 20px
 
     # Return to default mode
     bindsym Return mode "default"

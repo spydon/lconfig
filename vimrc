@@ -66,8 +66,8 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" Use jj instead of escape
-imap jj <Esc>
+" Use jk instead of escape
+imap jk <Esc>
 
 " Allow saving of files as sudo when it was forgotten
 cmap w!! w !sudo tee > /dev/null %
