@@ -27,6 +27,12 @@
     "custom/flame",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
+    "custom/flame-stars",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
+     "custom/cardano",
+		"custom/left-arrow-light",
+		"custom/left-arrow-dark",
     "custom/bitcoin",
 		"custom/left-arrow-light",
 		"custom/left-arrow-dark",
@@ -89,6 +95,16 @@
 		"interval": 1800,
 		"exec": "$HOME/scripts/so-flame.sh",
 		"format": "Flame: {}"
+  },
+  "custom/flame-stars": {
+		"interval": 3600,
+		"exec": "$HOME/scripts/stars.sh",
+		"format": "Stars: {}"
+  },
+  "custom/cardano": {
+		"interval": 60,
+		"exec": "$HOME/scripts/cardano.sh",
+		"format": "ADA: {}"
   },
   "custom/bitcoin": {
 		"interval": 60,

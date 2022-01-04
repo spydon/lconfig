@@ -46,3 +46,4 @@ Author: Lukas Klingsbo (Spydon)
 * alacritty - Standard terminal in sway
 * grim - Screenshots
 * wl-clipboard - Handles the clipboard from the command line
+* ly - terminal display manager

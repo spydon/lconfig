@@ -24,6 +24,8 @@ window#waybar {
 #clock.3,
 #custom-dignitana,
 #custom-flame,
+#custom-flame-stars,
+#custom-cardano,
 #custom-bitcoin,
 #pulseaudio,
 #memory,
@@ -57,6 +59,12 @@ window#waybar {
 #custom-flame {
 	color: #FFBF00;
 }
+#custom-flame-stars {
+	color: #BBBF00;
+}
+#custom-cardano {
+	color: #D67229;
+}
 #custom-bitcoin {
 	color: #ff0080;
 }
@@ -78,6 +86,8 @@ window#waybar {
 
 #custom-dignitana,
 #custom-flame,
+#custom-flame-stars,
+#custom-cardano,
 #custom-bitcoin,
 #clock,
 #pulseaudio,

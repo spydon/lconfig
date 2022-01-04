@@ -23,9 +23,9 @@ for_window [app_id="alacritty"] opacity 0.8
 
 ### Output configuration
 #
-#output DP-3 res 5120x1440
-output DP-3 res 2560x1440
-output HDMI-A-1 res 2560x1440
+output DP-3 res 5120x1440
+#output DP-3 res 2560x1440
+#output HDMI-A-1 res 2560x1440
 set $wallpapers_path $HOME/pictures/wallpapers
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
@@ -89,8 +89,6 @@ input type:pointer {
 #bindsym --whole-window BTN_SIDE seat - cursor press button0
 #bindsym --whole-window --release BTN_SIDE seat - cursor release button0
 
-
-
 ### Key bindings
 #
 # Basics:
@@ -128,7 +126,7 @@ input type:pointer {
     bindsym $mod+Shift+f exec MOZ_ENABLE_WAYLAND=1 firefox-beta
 
     # Andriod studio
-    bindsym $mod+u exec /home/spydon/bin/android-studio/bin/studio.sh
+    bindsym $mod+u exec _JAVA_AWT_WM_NONREPARENTING=1 /home/spydon/bin/android-studio/bin/studio.sh
 
 #
 # Moving around:
