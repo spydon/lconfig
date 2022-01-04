@@ -100,8 +100,11 @@ input type:pointer {
     bindsym $mod+Shift+c kill
 
     # Start your launcher
-    bindsym $mod+p exec alacritty --class "launcher" -e bash -c 'compgen -c | grep -v fzf | sort -u | fzf --layout=reverse | xargs -r swaymsg -t command exec'
-    for_window [app_id="^launcher$"] floating enable, border none, opacity 0.8
+    #bindsym $mod+p exec alacritty --class "launcher" -e bash -c 'compgen -c | sort -u | fzf --layout=reverse --history=/home/spydon/.local/state/fzf_history | xargs -r swaymsg -t command exec'
+    #for_window [app_id="^launcher$"] floating enable, border none, opacity 0.8
+
+    for_window [app_id="^launcher$"] floating enable, sticky enable, border pixel 1, opacity 0.8
+    bindsym $mod+p exec exec alacritty --class=launcher -e sway-launcher-desktop
 
     # Screenshot from part of the screen
     bindsym $mod+a exec bash -c '/home/spydon/scripts/screenshot.sh'
@@ -110,7 +113,6 @@ input type:pointer {
     # Despite the name, also works for non-floating windows.
     # Change normal to inverse to use left mouse button for resizing and right
     # mouse button for dragging.
-
 
     # Reload the configuration file
     bindsym $mod+Shift+q reload
