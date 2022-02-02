@@ -39,6 +39,7 @@ Author: Lukas Klingsbo (Spydon)
 ## Useful packages for fresh installs on Wayland:
 * sway - Tiling window manager, drop-in replacement of i3
 * waybar - Better bar than swaybar
+ - Don't forget to install otf-font-awesome
 * zsh, antigen - Base shell setup
 * neovim - Vim but can be used as a backend for other applications, for example firenvim
 * clipman - Clipboard manager
@@ -48,3 +49,5 @@ Author: Lukas Klingsbo (Spydon)
 * wl-clipboard - Handles the clipboard from the command line
 * ly - terminal display manager
 * sway-launcher-desktop - mod + p launcher with MRU sorting
+* pavucontrol
+  - Fantome dark theme gtk (set with lxappearance)

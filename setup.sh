@@ -6,20 +6,20 @@ cd "$(dirname "$0")"
 #
 
 mkdir remote 2> /dev/null
-curl -sSL git.io/antigen > remote/antigen.zsh
+#curl -sSL git.io/antigen > remote/antigen.zsh
 
 #
 # Install vim-plug
 #
 
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+#curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+#    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 #
 # Create vim directories
 #
 
-mkdir -p ~/.config/nvim
+#mkdir -p ~/.config/nvim
 mkdir -p .local/share/vim/backup
 
 #
