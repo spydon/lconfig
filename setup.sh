@@ -28,7 +28,7 @@ mkdir -p .local/share/vim/backup
 
 ln -nsf `realpath ideavimrc` ~/.ideavimrc
 #ln -nsf `realpath termite` ~/.config/termite
-ln -nsf `realpath vimrc` ~/.config/nvim/init.vim
+ln -nsf `realpath vimrc` ~/.vimrc
 ln -nsf `realpath sway` ~/.config/sway
 ln -nsf `realpath waybar` ~/.config/waybar
 #ln -nsf `realpath xinitrc` ~/.xinitrc
