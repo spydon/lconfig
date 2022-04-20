@@ -97,7 +97,6 @@ Plug 'bling/vim-airline'
 Plug 'vim-syntastic/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-surround'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -115,7 +114,7 @@ let g:syntastic_check_on_wq = 0
 " Theme
 syntax on
 set synmaxcol=800  " Highlight lines of at most 800 characters length
-set background=dark
 colorscheme PaperColor
+set background=dark
 " Transparency
 "hi Normal guibg=NONE ctermbg=NONE
