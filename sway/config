@@ -92,7 +92,7 @@ input type:pointer {
 ### Windows that should float
 
 for_window [title="Firefox — Sharing Indicator"] floating enable
-for_window [title="Firefox — Sharing Indicator"] nofocus
+for_window [title="Firefox — Sharing Indicator"] no_focus
 
 ### Key bindings
 #
