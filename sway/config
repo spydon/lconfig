@@ -89,6 +89,11 @@ input type:pointer {
 #bindsym --whole-window BTN_SIDE seat - cursor press button0
 #bindsym --whole-window --release BTN_SIDE seat - cursor release button0
 
+### Windows that should float
+
+for_window [title="Firefox — Sharing Indicator"] floating enable
+for_window [title="Firefox — Sharing Indicator"] nofocus
+
 ### Key bindings
 #
 # Basics:
