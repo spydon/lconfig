@@ -28,7 +28,8 @@ antigen apply
 
 export PATH="$PATH":"$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:$HOME/.cabal/bin:$HOME/bin:$HOME/scripts:$HOME/bin/flutter/bin:$HOME/bin/idea/bin:$HOME/bin/flutter/bin:$HOME/.pub-cache/bin:/usr/local/Caskroom/flutter/3.0.0/flutter/.pub-cache/bin:/Users/lukasklingsbo/repos/depot_tools"
 
-#export TERM=xterm-256color
+export TERM=xterm-256color
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent > ~/.ssh-agent-thing
