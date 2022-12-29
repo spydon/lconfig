@@ -1,11 +1,11 @@
-#!/usr/bin/env bash
+#/usr/bin/env bash
 cd "$(dirname "$0")"
 
 #
 # Install zsh plugin manager
 #
 
-mkdir remote 2> /dev/null
+#mkdir remote 2> /dev/null
 #curl -sSL git.io/antigen > remote/antigen.zsh
 
 #

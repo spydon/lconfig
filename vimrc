@@ -94,7 +94,7 @@ call plug#begin('~/.local/share/vim/plugged')
 
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'bling/vim-airline'
-Plug 'vim-syntastic/syntastic'
+"Plug 'vim-syntastic/syntastic'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'tpope/vim-surround'
 
