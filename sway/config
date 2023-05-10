@@ -22,10 +22,17 @@ set $term alacritty --class "alacritty"
 for_window [app_id="alacritty"] opacity 0.8
 
 ### Output configuration
-#
-output DP-3 res 5120x1440
+#output DVI-D-1 res 2560x1440 position 0,0
+#output HDMI-A-1 res 2560x1440 position 2560,0
+
+# For recording
+#output DVI-D-1 res 1920x1080 position 0,0
+#output HDMI-A-1 res 2560x1440 position 1920,0
+
+#output HDMI-A-1 res 1920x1080
+#output DP-3 res 5120x1440
+#output DP-2 res 2560x1440
 #output DP-3 res 2560x1440
-#output HDMI-A-1 res 2560x1440
 set $wallpapers_path $HOME/pictures/wallpapers
 output * bg `find $wallpapers_path -type f | shuf -n 1` fill
 
@@ -91,8 +98,7 @@ input type:pointer {
 
 ### Windows that should float
 
-for_window [title="Firefox — Sharing Indicator"] floating enable
-for_window [title="Firefox — Sharing Indicator"] no_focus
+for_window [title="Firefox — Sharing Indicator"] floating enable, no_focus
 
 ### Key bindings
 #
@@ -110,6 +116,7 @@ for_window [title="Firefox — Sharing Indicator"] no_focus
 
     for_window [app_id="^launcher$"] floating enable, sticky enable, border pixel 1, opacity 0.8
     bindsym $mod+p exec exec alacritty --class=launcher -e sway-launcher-desktop
+    bindsym $mod+z exec exec rofimoji --action type --typer wtype --selector rofi
 
     # Screenshot from part of the screen
     bindsym $mod+a exec bash -c '/home/spydon/scripts/screenshot.sh'
@@ -133,7 +140,8 @@ for_window [title="Firefox — Sharing Indicator"] no_focus
     bindsym $mod+Shift+f exec MOZ_ENABLE_WAYLAND=1 firefox-beta
 
     # Andriod studio
-    bindsym $mod+u exec _JAVA_AWT_WM_NONREPARENTING=1 /home/spydon/bin/android-studio/bin/studio.sh
+    #bindsym $mod+u exec _JAVA_AWT_WM_NONREPARENTING=1 /home/spydon/bin/android-studio/bin/studio.sh
+    bindsym $mod+u exec /home/spydon/bin/android-studio/bin/studio.sh
 
 #
 # Moving around:
@@ -189,8 +197,8 @@ for_window [title="Firefox — Sharing Indicator"] no_focus
 #
 # Move workspaces between monitors
 #
-  bindsym $mod+z move workspace to output left
-  bindsym $mod+x move workspace to output right
+  #bindsym $mod+z move workspace to output left
+  #bindsym $mod+x move workspace to output right
 #
 # Layout stuff:
 #
@@ -202,7 +210,7 @@ for_window [title="Firefox — Sharing Indicator"] no_focus
 
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
-    bindsym $mod+w layout tabbed
+    #bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
     # Make the current focus fullscreen
@@ -256,5 +264,11 @@ bindsym $mod+r mode "resize"
 bar {
     swaybar_command waybar
 }
+
+# Focus shouldn't follow mouse, since that breaks popups in intellij
+focus_follows_mouse no
+
+# Support for sharing windows through pipewire
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 include /etc/sway/config.d/*
