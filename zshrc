@@ -9,7 +9,7 @@ antigen bundle autojump
 antigen bundle aws
 antigen bundle command-not-found
 antigen bundle git
-antigen bundle vi-mode
+antigen bundle jeffreytse/zsh-vi-mode
 
 # Syntax highlighting bundle.
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -30,13 +30,6 @@ export PATH="$PATH":"$HOME/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/u
 
 export TERM=xterm-256color
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
-
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent > ~/.ssh-agent-thing
-fi
-if [[ "$SSH_AGENT_PID" == "" ]]; then
-    eval "$(<~/.ssh-agent-thing)"
-fi
 
 ### ALIASES
 
