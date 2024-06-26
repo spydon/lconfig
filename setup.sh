@@ -19,8 +19,8 @@ cd "$(dirname "$0")"
 # Create vim directories
 #
 
-#mkdir -p ~/.config/nvim
-mkdir -p .local/share/vim/backup
+mkdir -p ~/.local/share/vim/backup
+mkdir -p ~/.local/share/vim/swap
 
 #
 # Create symlinks to config files
